@@ -1,0 +1,23 @@
+@echo off
+echo =============================================
+echo Realizando limpeza de arquivos temporários...
+echo =============================================
+
+REM LIMPAR PASTA TEMP DO USUARIO
+
+del /s /q %temp%\* 
+for /d %%x in (%temp%\*) do rd /s /q "%%x" 
+
+REM LIMPAR TEMP DO WINDOWS
+
+del /s /q C:\Windows\Temp\* 
+for /d %%x in (C:\Windows\Temp\*) do rd /s /q "%%x" 
+
+REM LIMPAR CACHE DO WINDOWS UPDATE
+
+net stop wuauserv 
+del /s /q C:\Windows\SoftwareDistribution\Download\* 
+net start wuauserv 
+
+echo Limpeza concluida!
+pause
