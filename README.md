@@ -1,7 +1,7 @@
 ## Otimizador Básico para Windows
 
 Este projeto é um script em Batch (.bat) desenvolvido para realizar tarefas simples de limpeza e otimização do sistema Windows, ajudando a melhorar o desempenho geral do computador.
-
+<hr>
 ⚙️ Funcionalidades
 
 O script possui um menu interativo com as seguintes opções:
