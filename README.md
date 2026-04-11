@@ -1,26 +1,59 @@
-🧹Script de limpeza de arquivos temporários🧹
+🧹 Otimizador Básico para Windows
 
-O que esse script faz?
+Este projeto é um script em Batch (.bat) desenvolvido para realizar tarefas simples de limpeza e otimização do sistema Windows, ajudando a melhorar o desempenho geral do computador.
 
-- Limpa pasta TEMPORÁRIO DO USUÁRIO
-- Limpa TEMPORÁRIO DO WINDOWS
-- Limpa o CACHE DO WINDOWS UPDATE
+⚙️ Funcionalidades
 
-📌Descrição do projeto📌
+O script possui um menu interativo com as seguintes opções:
 
-O projeto é um script que foi desenvolvido em BATCH (.bat) com o intuito de potencializar e otimizar o desempenho das máquinas que possuam o windows 11.
+1. Limpeza de arquivos temporários
+  - Remove arquivos da pasta temporária do usuário (%temp%);
+  - Limpa a pasta temporária do sistema (C:\Windows\Temp);
+  - Limpa o cache do Windows Update;
+    
+2. Otimizações do sistema
+  - Ativa o plano de energia Alto Desempenho;
+  - Ajusta efeitos visuais para melhor performance;
 
-⚙️Como usar⚙️
+3. Modo completo, que vai realizar otimização do sistema e limpeza
+  Executa:
+   - Limpeza de arquivos temporários;
+   - Limpeza de cache do Windows Update;
+   - Otimizações de desempenho;
+     
+4. Sair
+  - Encerra o script;
+    
+🚀 Como usar
 
-1. É necessário baixar o arquivo 'Limpeza_PC.bat'
-2. Clique com o botão direito sobre o arquivo
-3. Selecione a opção "Executar como Administrador"
-4. Aguarde a execução do processo
-5. O sistema vai exibir mensagens informando o progresso da limpeza
-6. Por último é necessário apenas apertar qualquer tecla para encerrar o processo
+1º passo: Crie um arquivo com extensão .bat, pode ser um arquivo do bloco de notas
+2º passo: Renomeie esse arquivo.
+    Exemplo: otimizador.bat
+3º passo: Cole o código do script dentro do arquivo
+4º passo: Clique com o botão direito no arquivo e selecione: Executar como administrador
 
-👩‍💻Autora👩‍💻
+⚠️ Importante: Algumas funções (como limpar pastas do sistema) exigem permissões de administrador.
 
-Projeto desenvolvido por Dania Sadallah Kader
-<br>
-Estudante de Análise e Desenvolvimento de Sistemas
+📋 Requisitos
+
+- Sistema operacional: Windows 10 ou superior
+- Permissões de administrador
+  
+⚠️ Avisos
+
+* O script remove arquivos temporários — não apaga arquivos pessoais
+* Pode fechar ou reiniciar serviços do sistema temporariamente
+* Use com cautela em ambientes corporativos
+
+🛠️ Tecnologias utilizadas
+
+- Batch Script (CMD);
+- Comandos nativos do Windows:
+  *del
+  *net stop/start
+  *powercfg
+  *reg add
+
+👨‍💻 Autor
+
+Desenvolvido por Dania Sadallah Kader
